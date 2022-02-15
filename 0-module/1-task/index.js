@@ -1,5 +1,7 @@
-function sum(m, n) {
- return m + n;
+"use strict";
+
+function sum(a, b){
+    return +a + +b;
 }
 
-sum(1,1) === 2;
+sum(1, 1)
