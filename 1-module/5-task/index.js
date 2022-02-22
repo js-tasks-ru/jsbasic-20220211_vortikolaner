@@ -1,9 +1,9 @@
-function truncate(str, maxlength) {
+function truncate(str, maxlength){
   if( str.length > maxlength){
  
-    str = str.substr(0, maxlength );
+    str = str.substr(0, maxlength-1);
     str += String.fromCharCode(8230);
-    return console.log(str); 
+    return str;
   }
-  console.log(str);
+  return str;
 }
