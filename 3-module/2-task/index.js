@@ -1,9 +1,9 @@
 function filterRange(arr, a, b) {
   let newArr = [];
-   for(let i = 0; i < arr.length; i++){
-        if( a >= arr[i] || arr[i] <= b ){
-            newArr.push(arr[i]);
-        }
-   }
+  arr.filter(item => {
+    if( a >= item || item <= b ){
+      newArr.push(item);
+  }
+  })
    return newArr;
 }
