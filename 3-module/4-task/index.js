@@ -1,10 +1,11 @@
 
-function showSalary(user, ag){
-  return user.map( item => {
-      if(item.age <= ag){
-          return `${item.name}, ${item.balance}`;
+function showSalary(users, age){
+    let arr = [];
+     users.map( item =>{
+      if(item.age <= age){
+        arr.push(`${item.name}, ${item.balance}\n`);
       }
-   }).join('\n');
-}
-
-console.log( showSalary(users, 21) )
+    })
+    return arr.join('');
+  }
+  console.log(showSalary(users, 21));
