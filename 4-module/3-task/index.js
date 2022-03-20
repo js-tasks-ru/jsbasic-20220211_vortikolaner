@@ -19,12 +19,13 @@ function highlight(table) {
         let arr = Array.from(table.rows[i].cells);
         arr.map(item =>{
             if(item.cellIndex == 3 && item.firstChild.data != 'Status'){
-                console.log(item.closest('tr'))
+                // console.log(item.closest('tr'))
             item.dataset.available === 'true' ? item.closest('tr').classList.add('available') : item.closest('tr').classList.add('unavailable');
             item.attributes.length == 0 ? item.closest('tr').hidden = 'true' : null;
-            console.log(item)
+            // console.log(item)
             
             } else if(item.cellIndex == 2){
+                
                 item.firstChild.data == 'm' ? item.closest('tr').classList.add('male') : item.closest('tr').classList.add('female')
             } else if(item.cellIndex == 1 && item.firstChild.data < 18){
                 item.closest('tr').style="text-decoration: line-through" ;

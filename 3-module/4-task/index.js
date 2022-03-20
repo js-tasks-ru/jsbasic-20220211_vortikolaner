@@ -8,4 +8,3 @@ function showSalary(users, age){
     })
     return arr.join('\n');
   }
-  console.log(showSalary(users, 21));
